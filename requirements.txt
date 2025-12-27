@@ -1,0 +1,11 @@
+numpy
+pandas
+scikit-learn
+tensorflow
+keras
+nltk
+gensim
+emoji
+tqdm
+lime
+matplotlib
