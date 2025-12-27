@@ -27,26 +27,28 @@ textual features and emoji semantics using deep learning.
 After training the emoji-aware sentiment analysis model on a combined dataset of Sentiment140 and custom emoji tweets, the evaluation results on the validation set are:
 
 Classification Report:
+| Class            | Precision | Recall | F1-Score | Support   |
+| ---------------- | --------- | ------ | -------- | --------- |
+| 0                | 0.79      | 0.83   | 0.81     | 9602      |
+| 1                | 0.82      | 0.78   | 0.80     | 9601      |
+| **Accuracy**     | —         | —      | **0.80** | **19203** |
+| **Macro Avg**    | 0.80      | 0.80   | 0.80     | 19203     |
+| **Weighted Avg** | 0.80      | 0.80   | 0.80     | 19203     |
 
-Class	Precision	Recall	F1-score	Support
-0 (Negative)	0.79	0.83	0.81	9,602
-1 (Positive)	0.82	0.78	0.80	9,601
+Confusion Matrix:
+| Actual \ Predicted | 0    | 1    |
+| ------------------ | ---- | ---- |
+| **0**              | 7934 | 1668 |
+| **1**              | 2089 | 7512 |
 
 Overall Metrics:
 
-Accuracy: 0.8044
-
-Precision: 0.8183
-
-Recall: 0.7824
-
-F1 Score: 0.8000
-
-Confusion Matrix:
-
-[[7934 1668]
- [2089 7512]]
-
+| Metric    | Value  |
+| --------- | ------ |
+| Accuracy  | 0.8044 |
+| Precision | 0.8183 |
+| Recall    | 0.7824 |
+| F1 Score  | 0.8000 |
 
 Interpretation:
 The model achieves around 80% accuracy, with a balanced performance for both positive and negative classes. It can effectively predict sentiment while accounting for emoji information in tweets.
