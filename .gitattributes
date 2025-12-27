@@ -1,2 +1,26 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large data
+data/*.csv
+*.zip
+
+# Embeddings
+glove*.txt
+emoji2vec.txt
+
+# Models
+*.h5
+*.pickle
+
+# OS
+.DS_Store
+
+embeddings/*.txt
+embeddings/*.zip
